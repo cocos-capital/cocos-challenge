@@ -43,8 +43,3 @@ Ya hemos creado una base de datos con las siguientes tablas y algunos datos:
 - **orders**: id, instrumentId, userId, side, size, price, type, status, datetime
 - **marketdata**: id, instrumentId, high, low, open, last, previousClose, datetime
 
-Los datos para acceder a la base de datos son:
-Host:
-Puerto:
-User:
-Pass:
