@@ -1,7 +1,5 @@
 # cocos-challenge
 
-**Fullstack**
-
 **Resumen:**
 Desarrollar una aplicación web que permita a los usuarios realizar un seguimiento de sus inversiones y enviar una orden al mercado. La aplicación consistirá en 3 pantallas:
 - **Home**: en esta pantalla el usuario podrá observar el valor total de su cuenta y los pesos disponibles para operar. También se listarán los activos que posee, en cada activo se mostrará la cantidad de acciones/nominales, el valor total monetario de la posición ($) y el rendimiento total (%).
