@@ -1,6 +1,6 @@
 # cocos-challenge
 
-**Fullstack - Semi Senior**
+**Fullstack**
 
 **Resumen:**
 Desarrollar una aplicación web que permita a los usuarios realizar un seguimiento de sus inversiones y enviar una orden al mercado. La aplicación consistirá en 3 pantallas:
