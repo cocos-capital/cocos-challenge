@@ -35,7 +35,7 @@ Desarrollar una aplicación web que permita a los usuarios realizar un seguimien
 - Documentá cualquier suposición o decisión de diseño que consideres relevante.
 
 **Base de datos:**
-Ya hemos creado una base de datos con las siguientes tablas y algunos datos:
+Ya hemos creado una base de datos con las siguientes tablas y algunos datos (pueden usar el archivo `database.sql` para crear y popular las tablas):
 - **users**: id, email, accountNumber
 - **instruments**: id, ticker, name, type
 - **orders**: id, instrumentId, userId, side, size, price, type, status, datetime
