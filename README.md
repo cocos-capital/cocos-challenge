@@ -2,7 +2,7 @@
 
 **Resumen:**
 Desarrollar una aplicación web que permita a los usuarios realizar un seguimiento de sus inversiones y enviar una orden al mercado. La aplicación consistirá en 3 pantallas:
-- **Home**: en esta pantalla el usuario podrá observar el valor total de su cuenta y los pesos disponibles para operar. También se listarán los activos que posee, en cada activo se mostrará la cantidad de acciones/nominales, el valor total monetario de la posición ($) y el rendimiento total (%).
+- **Home**: en esta pantalla se mostrará el valor total de la cuenta de un usuario, sus pesos disponibles para operar y el listado de activos que posee, en cada uno se mostrará la cantidad de acciones, el valor total monetario de la posición ($) y el rendimiento total (%).
 - **Search**: en esta pantalla el usuario podrá buscar cualquier activo por ticker. Se accederá a esta pantalla desde un botón en el Home.
 - **Orden**: a esta pantalla se accede haciendo click en algún activo listado en el search o desde el listado de posiciones de la home. El usuario podrá enviar una orden de compra o venta del activo. La pantalla tendrá que soportar dos tipos de ordenes: market y limite. Las ordenes market no requieren que se envíe el precio ya que se ejecutara la orden con las ofertas del mercado, por el contrario, las ordenes limite requieren el envío del precio al cual el usuario quiere ejecutar la orden.
 
