@@ -30,7 +30,7 @@ Desarrollar una aplicación web que permita a los usuarios realizar un seguimien
 **Consideraciones técnicas:**
 - Para el frontend utilizar React o Next.js
 - Para la API REST utilizar Node.js y algún framework que facilite el desarrollo de la API
-- Implementar un test unitario sobre la función para enviar una orden
+- Implementar un test funcional sobre la función para enviar una orden
 - NO es necesario implementar autenticación de usuarios.
 - Documentá cualquier suposición o decisión de diseño que consideres relevante.
 
