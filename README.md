@@ -26,6 +26,7 @@ Desarrollar una aplicación web que permita a los usuarios realizar un seguimien
 - El cash (ARS) esta modelado como un instrumento de tipo 'MONEDA'
 - En la tabla marketdata se encuentras los precios de los ultimos 2 dias de los instrumentos. El `last`, es el último precio de cada activo. Para calcular el retorno diario utilizar las columnas `last` y `previousClose`.
 - Cuando se envia una orden de tipo `MARKET`, enviar el último precio (last)
+- Para calcular el valor de mercado, rendimiento y cantidad de acciones de cada posición usar las ordenes en estado `FILLED` de cada activo.
 
 **Consideraciones técnicas:**
 - Para el frontend utilizar React o Next.js
