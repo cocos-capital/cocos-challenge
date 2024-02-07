@@ -1,4 +1,4 @@
-# cocos-challenge-fullstack
+# cocos-challenge-backend
 
 **Resumen una API en Node JS**
 Desarrollar una API que permita obtener obetner la siguiente información a traves de endpoints:
