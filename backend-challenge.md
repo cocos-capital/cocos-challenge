@@ -1,7 +1,7 @@
 # cocos-challenge-backend
 
 **Resumen una API en Node JS:**
-Desarrollar una API que permita obtener obetner la siguiente información a traves de endpoints:
+Desarrollar una API que permita obtener la siguiente información a traves de endpoints:
 - **Portfolio**: La respuesta deberá devolver el valor total de la cuenta de un usuario, sus pesos disponibles para operar el listado de activos que posee (incluyendo cantidad de acciones, el valor total monetario de la posición ($) y el rendimiento total (%)).
 - **Buscar activos**: La respuesta deberá devolver el listado de activos similares a la busqueda realizada (tiene que soportar busqueda por ticker o nombre).
 - **Enviar una orden al mercado**: A traves de este endpoint se podrá enviar una orden de compra o venta del activo. Soportando dos tipos de ordenes: market y limite. Las ordenes market no requieren que se envíe el precio ya que se ejecutara la orden con las ofertas del mercado, por el contrario, las ordenes limite requieren el envío del precio al cual el usuario quiere ejecutar la orden. La orden quedará grabada en la tabla `orders` con el estado correspondiente y valores correspondientes.
@@ -22,7 +22,7 @@ Desarrollar una API que permita obtener obetner la siguiente información a trav
 - Si la orden enviada es por un monto mayor al disponible, la orden tiene que ser rechazada y guardarse en estado REJECTED. Tener en cuenta tanto el caso de compra (validar que el usuario tiene los pesos suficientes) como el de venta (validar que el usuario tiene las acciones suficientes)
 - Las transferencias entrantes y salientes se pueden modelar como ordenes. Las transferencias entrantes tiene side = 'CASH_IN' mientras que las salientes side = 'CASH_OUT'
 - Cuando una orden es ejecutada, se tiene que actualizar el listado de posiciones del usuario.
-- Para hacer el calculo de la tenencia y pesos disponibles para operar utilizar todos los movimientos pertinentes que hay en la tabla `orders`
+- Para hacer el calculo de la tenencia y pesos disponibles utilizar todos los movimientos pertinentes que hay en la tabla `orders`, utilizando la columna `size`
 - El cash (ARS) esta modelado como un instrumento de tipo 'MONEDA'
 - En la tabla marketdata se encuentras los precios de los ultimos 2 dias de los instrumentos. El `last`, es el último precio de cada activo. Para calcular el retorno diario utilizar las columnas `last` y `previousClose`.
 - Cuando se envia una orden de tipo `MARKET`, enviar el último precio (last)
