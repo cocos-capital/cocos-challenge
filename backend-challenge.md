@@ -1,6 +1,6 @@
 # cocos-challenge-backend
 
-**Resumen una API en Node JS:**
+**Resumen:**
 Desarrollar una API que permita obtener la siguiente información a traves de endpoints:
 - **Portfolio**: La respuesta deberá devolver el valor total de la cuenta de un usuario, sus pesos disponibles para operar el listado de activos que posee (incluyendo cantidad de acciones, el valor total monetario de la posición ($) y el rendimiento total (%)).
 - **Buscar activos**: La respuesta deberá devolver el listado de activos similares a la busqueda realizada (tiene que soportar busqueda por ticker o nombre).
