@@ -36,14 +36,14 @@ Desarrollar una aplicación web que permita a los usuarios realizar un seguimien
 - Cuando se envia una orden de tipo `MARKET`, enviar el último precio (last)
 - Para calcular el valor de mercado, rendimiento y cantidad de acciones de cada posición usar las ordenes en estado `FILLED` de cada activo.
 
-**Consideraciones técnicas:**
+# Consideraciones técnicas
 - Para el frontend utilizar React o Next.js
 - Para la API REST utilizar Node.js y algún framework que facilite el desarrollo de la API
 - Implementar un test funcional sobre la función para enviar una orden
 - NO es necesario implementar autenticación de usuarios.
 - Documentá cualquier suposición o decisión de diseño que consideres relevante.
 
-**Base de datos:**
+# Base de datos
 Ya hemos creado una base de datos con las siguientes tablas y algunos datos (pueden usar el archivo `database.sql` para crear y popular las tablas):
 - **users**: id, email, accountNumber
 - **instruments**: id, ticker, name, type
