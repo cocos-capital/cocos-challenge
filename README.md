@@ -1,6 +1,6 @@
 # cocos-challenge-backend
 
-**Resumen una API en Node JS**
+**Resumen una API en Node JS:**
 Desarrollar una API que permita obtener obetner la siguiente información a traves de endpoints:
 - **Portfolio**: La respuesta deberá devolver el valor total de la cuenta de un usuario, sus pesos disponibles para operar el listado de activos que posee (incluyendo cantidad de acciones, el valor total monetario de la posición ($) y el rendimiento total (%)).
 - **Buscar activos**: La respuesta deberá devolver el listado de activos similares a la busqueda realizada (tiene que soportar busqueda por ticker o nombre).
@@ -14,7 +14,7 @@ Desarrollar una aplicación web que permita a los usuarios realizar un seguimien
 - **Search**: en esta pantalla el usuario podrá buscar cualquier activo por ticker. Se accederá a esta pantalla desde un botón en el Home.
 - **Orden**: a esta pantalla se accede haciendo click en algún activo listado en el search o desde el listado de posiciones de la home. El usuario podrá enviar una orden de compra o venta del activo. La pantalla tendrá que soportar dos tipos de ordenes: market y limite. Las ordenes market no requieren que se envíe el precio ya que se ejecutara la orden con las ofertas del mercado, por el contrario, las ordenes limite requieren el envío del precio al cual el usuario quiere ejecutar la orden.
 
-**Consideraciones funcionales:**
+# Consideraciones funcionales
 - Los precios de los activos tienen que estar en pesos
 - NO hace falta simular el mercado
 - Cuando un usuario envía una orden, es necesario enviar la cantidad de acciones que quiere comprar o vender. Permitir al usuario enviar la cantidad de acciones exactas o un monto total de inversión en pesos (en este caso, calcular la cantidad de acciones máximas que puede enviar, no se admiten fracciones de acciones)
