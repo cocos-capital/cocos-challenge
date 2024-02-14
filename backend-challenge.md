@@ -39,6 +39,6 @@ Ya hemos creado una base de datos con las siguientes tablas y algunos datos (pue
 - **users**: id, email, accountNumber
 - **instruments**: id, ticker, name, type
 - **orders**: id, instrumentId, userId, side, size, price, type, status, datetime
-- **marketdata**: id, instrumentId, high, low, open, last, previousClose, datetime
+- **marketdata**: id, instrumentId, high, low, open, close, previousClose, datetime
 
 
