@@ -24,8 +24,8 @@ Desarrollar una aplicación web que permita a los usuarios realizar un seguimien
 - Cuando una orden es ejecutada, se tiene que actualizar el listado de posiciones del usuario.
 - Para hacer el calculo de la tenencia y pesos disponibles para operar utilizar todos los movimientos pertinentes que hay en la tabla `orders`
 - El cash (ARS) esta modelado como un instrumento de tipo 'MONEDA'
-- En la tabla marketdata se encuentras los precios de los ultimos 2 dias de los instrumentos. El `last`, es el último precio de cada activo. Para calcular el retorno diario utilizar las columnas `last` y `previousClose`.
-- Cuando se envia una orden de tipo `MARKET`, enviar el último precio (last)
+- En la tabla marketdata se encuentras los precios de los ultimos 2 dias de los instrumentos. El `close`, es el último precio de cada activo. Para calcular el retorno diario utilizar las columnas `close` y `previousClose`.
+- Cuando se envia una orden de tipo `MARKET`, enviar el último precio (close)
 - Para calcular el valor de mercado, rendimiento y cantidad de acciones de cada posición usar las ordenes en estado `FILLED` de cada activo.
 
 # Consideraciones técnicas
@@ -40,5 +40,5 @@ Ya hemos creado una base de datos con las siguientes tablas y algunos datos (pue
 - **users**: id, email, accountNumber
 - **instruments**: id, ticker, name, type
 - **orders**: id, instrumentId, userId, side, size, price, type, status, datetime
-- **marketdata**: id, instrumentId, high, low, open, last, previousClose, datetime
+- **marketdata**: id, instrumentId, high, low, open, close, previousClose, datetime
 
