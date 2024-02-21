@@ -29,7 +29,7 @@ Desarrollar una API que permita obtener la siguiente información a traves de en
 - Para calcular el valor de mercado, rendimiento y cantidad de acciones de cada posición usar las ordenes en estado `FILLED` de cada activo.
 
 # Consideraciones técnicas
-- Para la API REST utilizar Node.js y algún framework que facilite el desarrollo de la API
+- **Para la API REST Express.js y TypeORM**
 - Implementar un test funcional sobre la función para enviar una orden
 - NO es necesario implementar autenticación de usuarios.
 - Documentá cualquier suposición o decisión de diseño que consideres relevante.
