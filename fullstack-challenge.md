@@ -4,7 +4,7 @@
 Desarrollar una API que permita obtener la siguiente información a traves de endpoints:
 - **Portfolio**: La respuesta deberá devolver el valor total de la cuenta de un usuario, sus pesos disponibles para operar y el listado de activos que posee (incluyendo cantidad de acciones, el valor total monetario de la posición ($) y el rendimiento total (%)).
 - **Buscar activos**: La respuesta deberá devolver el listado de activos similares a la busqueda realizada (tiene que soportar busqueda por ticker y/o por nombre).
-- **Enviar una orden al mercado**: A traves de este endpoint se podrá enviar una orden de compra o venta del activo. Soportando dos tipos de ordenes: MARKET y LIMIT. Las ordenes MARKET no requieren que se envíe el precio ya que se ejecutara la orden con las ofertas del mercado, por el contrario, las ordenes limite requieren el envío del precio al cual el usuario quiere ejecutar la orden. La orden quedará grabada en la tabla `orders` con el estado y valores correspondientes.
+- **Enviar una orden al mercado**: A traves de este endpoint se podrá enviar una orden de compra o venta del activo. Soportando dos tipos de ordenes: MARKET y LIMIT. Las ordenes MARKET no requieren que se envíe el precio ya que se ejecutara la orden con las ofertas del mercado, por el contrario, las ordenes `LIMIT` requieren el envío del precio al cual el usuario quiere ejecutar la orden. La orden quedará grabada en la tabla `orders` con el estado y valores correspondientes.
 
 **Opcionales / Nice to haves:**
 - Proveer una coleccion de Postman, Insomnia o REST Client para la API y ejemplos de como invocarla.
@@ -15,7 +15,7 @@ Desarrollar una API que permita obtener la siguiente información a traves de en
 - Cuando un usuario envía una orden, es necesario enviar la cantidad de acciones que quiere comprar o vender. Permitir al usuario enviar la cantidad de acciones exactas o un monto total de inversión en pesos (en este caso, calcular la cantidad de acciones máximas que puede enviar, no se admiten fracciones de acciones).
 - Las ordenes tienen un atributo llamado `side` que describe si la orden es de compra (`BUY`) o venta (`SELL`).
 - Las ordenes tienen distintos estados (status): 
-    - `NEW` - cuando una orden limite es enviada al mercado, se envía con este estado.
+    - `NEW` - cuando una orden `LIMIT` es enviada al mercado, se envía con este estado.
     - `FILLED` - cuando una orden se ejecuta. Las ordenes market son ejecutadas inmediatamente al ser enviadas.
     - `REJECTED` - cuando la orden es rechazada por el mercado ya que no cumple con los requerimientos, como por ejemplo cuando se envía una orden por un monto mayor al disponible.
     - `CANCELLED` - cuando la orden es cancelada por el usuario.
