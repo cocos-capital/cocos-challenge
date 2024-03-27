@@ -7,6 +7,8 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 - **/search**: Desarrollar un buscador de activos por ticker.
 - **/orders**: Al hacer click en algun instrumento mostrar un modal formulario para enviar una orden (el metodo es un POST). La respuesta del POST va a tener un `status` que puede ser `PENDING`, `REJECTED`, `COMPLETED`. Mostrar el estado que devolvio.
 
+**Agregar unit test en caso que sea necesario**
+
 # Consideraciones funcionales
 - Los precios de los activos tienen que estar en pesos.
 - NO hace falta simular el mercado.
@@ -35,3 +37,9 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 - Utilizar **Redux** o **React Query**
 - npm o yarn
 - **sass** para los estilos
+
+# Datos de la api
+GET https://dummy-api-topaz.vercel.app/portfolio
+GET https://dummy-api-topaz.vercel.app/instruments
+GET https://dummy-api-topaz.vercel.app/search?query=DYC
+POST https://dummy-api-topaz.vercel.app/orders
