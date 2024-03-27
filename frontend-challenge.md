@@ -10,7 +10,7 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 **Agregar unit test en caso que sea necesario**
 
 # Consideraciones funcionales
-En relacion al diseño podes inspirarte en aplicaciones como coinbase.com, binance.com, robinhood.com.
+En relacion al diseño podes inspirarte en aplicaciones como coinbase.com, binance.com (lite), robinhood.com.
 
 
 - Los precios de los activos tienen que estar en pesos.
