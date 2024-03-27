@@ -4,11 +4,8 @@
 Desarrollar una web/app que permita visualizar la informacion obtenida en los siguientes endpoints
 - **/instruments**: La pantalla deberá mostrar el listado de instrumentos obtenidos por este endpoint. Mostrar ticker, nombre, ultimo precio y retorno (calculado usando el ultimo precio y el precio de cierre que devuelve el mismo endpoint)
 - **/portfolio**: La pantalla deberá mostrar el listado de activos que devuelve el endpoint. Para cada uno de ellos mostrar el ticker, la cantidad de la posicion, el valor de mercado y la ganancia total (user el `avg_buy_price` como valor de compra)
-- **/search**: La respuesta deberá devolver el listado de activos similares a la busqueda realizada (tiene que soportar busqueda por ticker y/o por nombre).
-- **Enviar una orden al mercado**: A traves de este endpoint se podrá enviar una orden de compra o venta del activo. Soportando dos tipos de ordenes: MARKET y LIMIT. Las ordenes MARKET no requieren que se envíe el precio ya que se ejecutara la orden con las ofertas del mercado, por el contrario, las ordenes `LIMIT` requieren el envío del precio al cual el usuario quiere ejecutar la orden. La orden quedará grabada en la tabla `orders` con el estado y valores correspondientes.
-
-**Opcionales / Nice to haves:**
-- Proveer una coleccion de Postman, Insomnia o REST Client para la API y ejemplos de como invocarla.
+- **/search**: Desarrollar un buscador de activos por ticker.
+- **/orders**: Al hacer click en algun instrumento mostrar un modal formulario para enviar una orden (el metodo es un POST). La respuesta del POST va a tener un `status` que puede ser `PENDING`, `REJECTED`, `COMPLETED`. Mostrar el estado que devolvio.
 
 # Consideraciones funcionales
 - Los precios de los activos tienen que estar en pesos.
@@ -33,18 +30,8 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 - Para calcular el valor de mercado, rendimiento y cantidad de acciones de cada posición usar las ordenes en estado `FILLED` de cada activo.
 
 # Consideraciones técnicas
-- **Para la API REST Express.js y TypeORM**
-- Desarrollar la aplicación utilizando Node.js. 
-  - Para la API REST utilizar algún framework a elección como Express o NestJS.
-  - Elegir alguna estrategia o libreria para el acceso a datos. Es posible utilizar un ORM o ejecutar consultas directamente.
-  - Utilizar cualquier libreria o framework que se crea conveniente.
-- Implementar un test funcional sobre la función para enviar una orden.
-- NO es necesario implementar autenticación de usuarios.
-- Documentá cualquier suposición o decisión de diseño que consideres relevante.
-
-# Base de datos
-Ya hemos creado una base de datos con las siguientes tablas y algunos datos (pueden usar el archivo `database.sql` para crear y popular las tablas):
-- **users**: id, email, accountNumber
-- **instruments**: id, ticker, name, type
-- **orders**: id, instrumentId, userId, side, size, price, type, status, datetime
-- **marketdata**: id, instrumentId, high, low, open, close, previousClose, datetime
+- Desarrollar la aplicación utilizando **Node.js** y **Typescript**
+- Utilizar **React** con alguna herramienta de compilacion como vite.
+- Utilizar **Redux** o **React Query**
+- npm o yarn
+- **sass** para los estilos
