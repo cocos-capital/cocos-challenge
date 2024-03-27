@@ -39,7 +39,7 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 - **sass** para los estilos
 
 # Datos de la api
-GET https://dummy-api-topaz.vercel.app/portfolio
-GET https://dummy-api-topaz.vercel.app/instruments
-GET https://dummy-api-topaz.vercel.app/search?query=DYC
-POST https://dummy-api-topaz.vercel.app/orders
+- GET https://dummy-api-topaz.vercel.app/portfolio
+- GET https://dummy-api-topaz.vercel.app/instruments
+- GET https://dummy-api-topaz.vercel.app/search?query=DYC
+- POST https://dummy-api-topaz.vercel.app/orders
