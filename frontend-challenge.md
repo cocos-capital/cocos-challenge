@@ -7,12 +7,7 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 - **/search**: Desarrollar un buscador de activos por ticker.
 - **/orders**: Al hacer click en algun instrumento mostrar un modal formulario para enviar una orden (el metodo es un POST). La respuesta del POST va a tener un `status` que puede ser `PENDING`, `REJECTED`, `COMPLETED`. Mostrar el estado que devolvio.
 
-**Agregar unit test en caso que sea necesario**
-
 # Consideraciones funcionales
-En relacion al diseño podes inspirarte en aplicaciones como coinbase.com, binance.com (lite), robinhood.com.
-
-
 - Los precios de los activos tienen que estar en pesos.
 - NO hace falta simular el mercado.
 - Cuando un usuario envía una orden, es necesario enviar la cantidad de acciones que quiere comprar o vender. Permitir al usuario enviar la cantidad de acciones exactas o un monto total de inversión en pesos (en este caso, calcular la cantidad de acciones máximas que puede enviar, no se admiten fracciones de acciones).
@@ -41,6 +36,8 @@ En relacion al diseño podes inspirarte en aplicaciones como coinbase.com, binan
 - npm o yarn
 - **sass** para los estilos
 - La aplicacion tiene que ser responsive
+- **Agregar unit test en caso que sea necesario**
+- En relacion al diseño podes inspirarte en aplicaciones como coinbase.com, binance.com (lite), robinhood.com.
 
 # Datos de la api
 - GET https://dummy-api-topaz.vercel.app/portfolio
