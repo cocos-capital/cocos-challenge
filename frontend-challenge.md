@@ -10,6 +10,9 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 **Agregar unit test en caso que sea necesario**
 
 # Consideraciones funcionales
+En relacion al diseño podes inspirarte en aplicaciones como coinbase.com
+
+
 - Los precios de los activos tienen que estar en pesos.
 - NO hace falta simular el mercado.
 - Cuando un usuario envía una orden, es necesario enviar la cantidad de acciones que quiere comprar o vender. Permitir al usuario enviar la cantidad de acciones exactas o un monto total de inversión en pesos (en este caso, calcular la cantidad de acciones máximas que puede enviar, no se admiten fracciones de acciones).
@@ -37,6 +40,7 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 - Utilizar **Redux** o **React Query**
 - npm o yarn
 - **sass** para los estilos
+- La aplicacion tiene que ser responsive
 
 # Datos de la api
 - GET https://dummy-api-topaz.vercel.app/portfolio
