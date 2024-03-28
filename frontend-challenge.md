@@ -34,18 +34,18 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 - GET https://dummy-api-topaz.vercel.app/search?query=DYC
 - POST https://dummy-api-topaz.vercel.app/orders
   Ejemplo body 1
-  `{
+  ```{
       instrument_id: 1,
-      side: 'BUY', // 'SELL'
+      side: 'BUY',
       type: 'MARKET',
       quantity: 1234
-  }`
+  }```
   Ejemplo body 2
-  `{
+  ```{
       instrument_id: 1,
       side: 'SELL'
       type: 'LIMIT',
       quantity: 123,
       price: 84.5
-  }`
+  }```
     
