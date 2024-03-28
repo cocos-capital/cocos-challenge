@@ -33,7 +33,8 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
 - GET https://dummy-api-topaz.vercel.app/instruments
 - GET https://dummy-api-topaz.vercel.app/search?query=DYC
 - POST https://dummy-api-topaz.vercel.app/orders
-  ```Ejemplo body 1
+  ```
+  Ejemplo body 1
   {
       instrument_id: 1,
       side: 'BUY',
@@ -47,5 +48,6 @@ Desarrollar una web/app que permita visualizar la informacion obtenida en los si
       type: 'LIMIT',
       quantity: 123,
       price: 84.5
-  }```
+  }
+  ```
     
