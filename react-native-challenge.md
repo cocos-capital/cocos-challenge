@@ -20,8 +20,13 @@ Desarrollar una App que permita visualizar la informacion obtenida en los siguie
 - Para calcular el valor de mercado de una posicion del portafolio usar `quantity * last_price`. Tener en cuenta que el parametro `avg_cost_price` es el precio de compra promedio, utilizarlo para calcular la ganancia (valor absoluto $) y rendimiento (%) total.
 
 # Consideraciones técnicas
-- Desarrollar la aplicación en **ReactNative**
-- La aplicacion tiene que ser responsive
+- Desarrollar la aplicación en **React Native**. Podés utilizar un proyecto Bare o cualquier framework de tu preferencia. Se valorará el uso de Expo, aunque no es obligatorio.
+- Incluir un archivo README.md con instrucciones claras para levantar el proyecto y una sección dedicada a explicar las decisiones técnicas que tomaste durante el desarrollo.
+- Cualquier funcionalidad adicional que implementes será considerada un punto a favor. Enfocarse en desarrollar la aplicación como si fuera a ser Production Ready.
+- Aspectos a considerar:
+  - Estructura del proyecto: diseñar una arquitectura que facilite el mantenimiento y la escalabilidad.
+  - Manejo de errores: implementar un enfoque robusto para gestionar fallos en la aplicación.
+  - State Management: utilizar una estrategia adecuada para la gestión del estado global y/o local.
 - **Agregar unit test en caso que sea necesario**
 
 # Datos de la api
